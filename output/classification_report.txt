@@ -1,0 +1,34 @@
+                   precision    recall  f1-score   support
+
+       3D objects       0.00      0.00      0.00        16
+        Algorithm       0.00      0.00      0.00        21
+       Area chart       0.16      0.13      0.14        23
+        Bar plots       0.00      0.00      0.00        16
+    Block diagram       0.00      0.00      0.00        30
+         Box plot       0.05      0.05      0.05        22
+     Bubble Chart       0.00      0.00      0.00        14
+ Confusion matrix       0.00      0.00      0.00        23
+     Contour plot       0.00      0.00      0.00        13
+       Flow chart       0.03      0.06      0.04        17
+   Geographic map       0.00      0.00      0.00        24
+      Graph plots       0.00      0.00      0.00        23
+         Heat map       0.00      0.00      0.00        25
+        Histogram       0.00      0.00      0.00        24
+             Mask       0.06      0.05      0.05        20
+   Medical images       0.00      0.00      0.00        17
+   Natural images       0.06      0.11      0.08        18
+    Pareto charts       0.04      0.14      0.06        21
+        Pie chart       0.00      0.00      0.00        16
+       Polar plot       0.00      0.00      0.00        21
+      Radar chart       0.00      0.00      0.00        20
+     Scatter plot       0.04      0.10      0.06        20
+         Sketches       0.10      0.08      0.09        24
+     Surface plot       0.02      0.05      0.03        19
+           Tables       0.00      0.00      0.00        21
+     Tree Diagram       0.08      0.05      0.06        19
+      Vector plot       0.02      0.18      0.04        11
+     Venn Diagram       0.15      0.23      0.18        22
+
+         accuracy                           0.04       560
+        macro avg       0.03      0.04      0.03       560
+     weighted avg       0.03      0.04      0.03       560
