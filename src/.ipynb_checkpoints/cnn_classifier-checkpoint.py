@@ -49,7 +49,7 @@ import matplotlib.pyplot as plt
 
 #=====> Define global variables
 # Epochs
-EPOCHS = 3
+EPOCHS = 5
 
 #=====> Define functions
 # > Load data

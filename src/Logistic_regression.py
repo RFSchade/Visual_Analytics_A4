@@ -95,16 +95,12 @@ def load_data_lr(sample = None, size = 210):
     return X_train, X_test, y_train, y_test
 
 # > Normalize data
-def normalize(X_train, X_test, y_train, y_test):
+def normalize(X_train, X_test):
     # Scaling the features
     X_train_scaled = X_train / 255
     X_test_scaled = X_test / 255
-    # Create label encodings 
-    lb = LabelBinarizer ()
-    y_train = lb.fit_transform(y_train)
-    y_test = lb.fit_transform(y_test)
     
-    return (X_train_scaled, X_test_scaled, y_train_enc, y_test_enc)
+    return (X_train_scaled, X_test_scaled)
 
 # > Train model
 def train_model(X_train, y_train):
@@ -116,7 +112,7 @@ def train_model(X_train, y_train):
     clf = LogisticRegression(penalty="none",
                              tol=0.1,
                              solver="saga",
-                             multi_class="multinomial").fit(X_train, y_train) 
+                             multi_class="multinomial").fit(X_train, y_train.ravel()) 
                               
     return clf
     
@@ -178,7 +174,7 @@ def main():
     # Load data
     X_train, X_test, y_train, y_test = load_data_lr(args["subset"], args["size"])
     # normalize data
-    X_train, X_test, y_train, y_test = normalize(X_train, X_test, y_train, y_test)
+    X_train, X_test = normalize(X_train, X_test)
     # Training model 
     clf = train_model(X_train, y_train)
     # Reporting data 
